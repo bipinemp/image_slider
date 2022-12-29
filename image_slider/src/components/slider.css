@@ -1,0 +1,66 @@
+.slidermain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  transition: all 200ms linear;
+}
+.slider {
+  position: relative;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.slider img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.circle {
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+.circles {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.image-div {
+  display: flex;
+}
+.image-div button {
+  position: absolute;
+  background-color: rgb(255, 255, 49);
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 8;
+  font-size: 2em;
+  font-weight: bold;
+}
+.image-div button:first-of-type {
+  left: 20px;
+  top: 300px;
+}
+.image-div button:last-of-type {
+  right: 20px;
+  top: 300px;
+}
